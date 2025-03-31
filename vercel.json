@@ -8,13 +8,7 @@
     ],
     "routes": [
       {
-        "src": "/login",
-        "methods": ["GET"],
-        "dest": "/index.js"
-      },
-      {
-        "src": "/login/(.*)",
-        "methods": ["PUT"],
+        "src": "/(*)",
         "dest": "/index.js"
       }
     ],
