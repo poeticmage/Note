@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.json",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/index.json",
+        "dest": "/index.json"
+      }
+    ]
+  }
