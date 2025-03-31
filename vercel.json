@@ -2,14 +2,26 @@
     "version": 2,
     "builds": [
       {
-        "src": "index.json",
-        "use": "@vercel/static"
+        "src": "index.js",  
+        "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/index.json",
-        "dest": "/index.json"
+        "src": "/login",
+        "methods": ["GET"],
+        "dest": "/index.js"
+      },
+      {
+        "src": "/login/(.*)",
+        "methods": ["PUT"],
+        "dest": "/index.js"
       }
-    ]
+    ],
+    "env": {
+      "tokenT": "@tokenT",    
+      "gst1": "@gst1",      
+      "gst2": "@gst2"        
+    }
   }
+  
