@@ -8,14 +8,9 @@
     ],
     "routes": [
       {
-        "src": "/(*)",
+        "src": "/(.*)",
         "dest": "/index.js"
       }
-    ],
-    "env": {
-      "tokenT": "@tokenT",    
-      "gst1": "@gst1",      
-      "gst2": "@gst2"        
-    }
+    ]
   }
   
